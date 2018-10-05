@@ -2,7 +2,7 @@
 #include<iostream>
 using namespace std;
 //data collector fn
-void data(int &nows, int &sus){
+void data(){
 	cout <<"Type the no of weeks spent in this sale: ";
 	cin  >>nows;
 	cout <<"Type the no of bata shoes sold: ";
@@ -31,7 +31,7 @@ int main(){
 	//define the parameters
 	float sp=225, com1=10, com2=20, exp=20;
 	int nows, sus, sph=7;
-	data(nows, sus);
+	data();
 	int sal1=plainsal(nows);
 	float sal2=comsal(sp, sus, com1, sph, nows);
 	float sal3=plaincom(sp, sus, com2, exp);
