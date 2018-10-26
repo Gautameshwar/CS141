@@ -55,8 +55,8 @@ int meader(int arr[]){
 			cout<<tmin;
 			}
 		else{
-			for (int i=0;i<7;i++){
-				if (arr[i]<tbig && arr[i]>sortarr[j-1])//this condition makes sure that the element is greater than jth smallest value
+			for (int i=j;i<7;i++){
+				if (arr[i]<tbig && arr[i]>=sortarr[j-1])//this condition makes sure that the element is greater than jth smallest value
 					tbig=arr[i];//this gives the jth smallest no if this is looped for all i since this loop doesnt run for other i's once tbig has reached jth smallest value(i.e)arr[i]<tbig is violated! 
 			}
 			tmin=tbig;//saving the jth smallest elment in tmin
