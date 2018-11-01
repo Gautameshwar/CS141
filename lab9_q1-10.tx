@@ -1,0 +1,89 @@
+Q1:
+(1) S
+(2) T
+(3) 6940
+(4) S
+(5) 6940
+
+Q2: 
+(1) D
+
+Q3: 
+(1) When we define p as double pointer, it expects a double address. But since we input a char address, the error is produced!
+
+Q4:
+(1) A
+(2) C
+(3) B
+(4) A
+(5) B
+(6) C
+(7) B
+(8) C
+
+Q5: 
+(1) 
+cptr=s+4;
+for(i=4;i>=0;i--){
+	cout <<*cptr;
+	cptr=cptr-1;
+}
+return 0;
+
+Q6: 
+(1) 
+int counteven(int* arr, int n){
+	int x=0;
+	int* p=arr;
+	for(int i=0;i<n;i++){
+		if((*p)%2==0)x++;
+		p++;
+	}
+	return x;
+}
+
+Q7: 
+(1)
+double* dobmaxadd(double* a, int size){
+	double* tmax=a;
+	double* p=a;
+	if (size==0)return NULL;
+	for(int i=0;i<size;i++){
+		if((*p)>=(*tmax))tmax=p;
+		p++;
+	}
+	return tmax;
+}
+
+Q8: 
+(1)
+int mystrlen(char* cstring){
+	char* x=cstring;
+	int l=0;
+	for(int i=0;*x!='\0';i++){
+		l++;
+		x++;
+	}
+	return l;
+}
+
+Q9: 
+(1)
+bool contains(char* cstring, char a){
+	char* p=cstring;
+	for(int i=0;i<10;i++){
+		if(*p==a)return true;
+		p++;
+	}
+	return false;
+}
+
+Q10: 
+void revstring(char* ptr){
+	ptr+=4;
+	for(int i=0;i<5;i++){
+		cout<<*ptr;
+		ptr--;
+	}
+	cout<<endl;
+}
